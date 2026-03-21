@@ -53,8 +53,8 @@ app.all('/player/growid/login/validate', async (req: Request, res: Response) => 
   try {
     const formData = req.body as Record<string, string>;
 
-    const growId = formData?.growId || "GUEST";
-    const password = formData?.password || "123";
+    const growId = formData?.growId || "";
+    const password = formData?.password || "";
     const _token = formData?._token || "bypass";
 
     const token = Buffer.from(
