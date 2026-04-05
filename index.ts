@@ -53,7 +53,6 @@ app.get('/', (_req: Request, res: Response) => {
  * @param res - express response
  */
 app.all('/player/login/dashboard', async (_req: Request, res: Response) => {
-  // langsung skip dashboard
   return res.redirect(307, '/player/growid/login/validate');
 });
 
